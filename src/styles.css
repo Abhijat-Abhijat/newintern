@@ -1,0 +1,125 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil&display=swap');
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Codystar&family=Stardos+Stencil&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Stardos Stencil', cursive;
+   */
+   font-family: 'Codystar', cursive;
+  background: linear-gradient(45deg, #000000, #2c2c2c, #000000);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* overflow: hidden; */
+  overflow-x: hidden;
+  /* overflow-y: scroll; */
+ color: aliceblue;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.card-container {
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center; */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+ /* margin: auto; */
+  /* margin-left: 50px; */
+  /* margin: auto; */
+  /* left: 0; */
+  /* right: 0; */
+  width: 100vw;
+  /* background-image: url(./assets/bg.jpg); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  backdrop-filter: blur( 4px );
+  min-height: 100vh;
+}
+
+.card {
+  text-align: center;
+  width: 15vw;
+  /* background-color: aqua; */
+  min-height: 200px;
+/* background: rgba( 255, 255, 255, 0.25 ); */
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 24px );
+-webkit-backdrop-filter: blur( 24px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  /* Generate a random background color for each card */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+}
+
+.card img {
+  width: 80%;
+  height: auto;
+  /* cursor: pointer; */
+  /* border-radius: 10px 10px 0 0; */
+  border-radius: 10px;
+}
+
+.attributes-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.attributes-list li {
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  /* background-color: #f2f2f2; */
+  padding: 10px;
+  text-align: center;
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.cursor {
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.cursor__follower {
+  transition: transform .4s;
+  width: 6px;
+  height: 6px;
+}
+
+/* Unrelated styles */
+html {
+  cursor: none;
+  background-color: #2d2b2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
